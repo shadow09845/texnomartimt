@@ -753,3 +753,58 @@ hr {
         }
     }
 }
+
+
+@media (max-width: 480px) {
+    .objekts {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .objekts .box {
+        width: calc(50% - 10px); /* 2 tadan qator uchun */
+        margin: 0; /* kerak bo'lsa */
+    }
+}
+/* iPhone 15 Pro (~430px) va kichik ekranlar uchun */
+@media (max-width: 480px) {
+    .objekts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* kartalar orasidagi bo‘shliq */
+    }
+
+    .objekts .box {
+        width: calc(50% - 10px); /* 2 tadan qator uchun */
+        max-width: none; /* oldingi max-width cheklovini olib tashlaymiz */
+        margin: 0;
+    }
+}
+
+
+/* 620px va kichikroq – 2 tadan qator */
+@media (max-width: 620px) {
+    .objekts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .objekts .box {
+        width: calc(50% - 10px); /* 2 tadan qator */
+        max-width: none;
+        margin: 0;
+    }
+}
+
+/* 320px va kichikroq – 1 tadan qator */
+@media (max-width: 320px) {
+    .objekts .box {
+        width: 100%; /* 1 tadan qator */
+        max-width: none;
+    }
+}
+
