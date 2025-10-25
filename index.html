@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <link rel="stylesheet" href="/style.css">
+
+
+
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 250px;
+            height: auto;
+            padding: 30px;
+            border-radius: 30px;
+            text-align: center;
+        }
+          .objekts{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+
+        .cart-modal {
+         display: none; 
+         position: fixed;
+         z-index: 1000;
+         left: 0; top: 0;
+         width: 100%; height: 100%;
+         background: rgba(0,0,0,0.4);
+}
+         .cart-content {
+        background: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 12px;
+        width: 1000px;
+        height: 500px;
+        text-align: center;
+        position: relative;
+}
+        .close-btn {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 24px;
+        cursor: pointer;
+}
+       .cart-content ul {
+        list-style: none;
+          padding: 0;
+           margin: 10px 0;
+}
+            .cart-content li {
+             background: #f9f9f9;
+           border-radius: 8px;
+            padding: 10px;
+             margin: 6px 0;
+} 
+          .clear-btn {
+         background: crimson;
+         color: white;
+          border: none;
+          border-radius: 8px;
+          padding: 8px 14px;
+            cursor: pointer;
+}
+.clear-btn:hover { background: rgb(0, 0, 255); }x
+
+    </style>
+</head>
+<body>
+
+
+    <div class="orab">
+    <div class="container">
+        <div class="navbar">
+            <h1>texnomart*</h1>
+            <button>Katalog</button>
+            <input class="search" type="text" placeholder="Qidirish">
+            <a href="">Kirish</a>
+            <a href="">Sevimlilar</a>
+            <a href="#">🛒</a>
+        </div>
+    </div>
+
+    <div class="search-container">
+    <input class="search" type="text" placeholder="Qidirish">
+</div>
+
+<!-- Pastki navbar -->
+<div class="mobile-navbar">
+    <a href="#"><span>🏠</span><br>Bosh sahifa</a>
+    <a href="#"><span>📂</span><br>Katalog</a>
+    <a href="#"><span>🛒</span><br>Savatcha</a>
+    <a href="#"><span>❤️</span><br>Sevimlilar</a>
+    <a href="#"><span>👤</span><br>Kirish</a>
+</div>
+
+    
+<br>
+    <div class="textlar">
+        <div class="txt">
+            <ul>
+                <li>
+                    <a href="">AKSIYALAR</a>
+                </li>
+                <li>
+                    <a href="">1+1</a>
+                </li>
+                <li>
+                    <a href="">HAVO SOVUTGICHLAR</a>
+                </li>
+                <li>
+                    <a href="">HAVO NAMLAGICHLAR</a>
+                </li>
+                <li>
+                    <a href="">SMARTFONLAR</a>
+                </li>
+                <li>
+                    <a href="">MUZLATGICHLAR</a>
+                </li>
+                <li>
+                    <a href="">CHANGYUTKICHLAR</a>
+                </li>
+                <li>
+                    <a href="">NOUTBUKLAR</a>
+                </li>
+                <li>
+                    <a href="">TELEVIZORLAR</a>
+                </li>
+                <li>
+                    <a href="">BARCHA KATEGORIYALAR</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+<br> <br> 
+
+      <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://mini-io-api.texnomart.uz/newcontent/slider/347/dyFPEw5MYDBCgQSopcXyBcpOE1HVhSugUCb7V3ad.webp" alt="Rasm 1"></div>
+      <div class="swiper-slide"><img src="https://mini-io-api.texnomart.uz/newcontent/slider/394/5PGurP9JX8ZhSQiYgfwFN1JIeuwl1fwVyKIdf2xY.webp" alt="Rasm 2"></div>
+      <div class="swiper-slide"><img src="https://mini-io-api.texnomart.uz/newcontent/slider/353/xnoV6GH7LvFlDRpDpsshAaebZk9RQ4t6oVQLq83i.webp" alt="Rasm 3"></div>
+    </div>
+
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    
+    <div class="swiper-pagination"></div>
+
+</div>
+
+
+
+
+  
+
+  <div class="swiper2">
+    <div class="swiper-wrapper2">
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/4/aa4237cb-9bc4-4941-8535-277ca7831f48.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/8/61521f46-27bb-4ba1-8fa7-34f3bc6e9530.png   " alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/5/ade607e8-e08e-40a1-85c1-b291327fe412.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/7/74a09808-7198-496a-b704-158399923abd.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/22/1f3896fc-fbb9-4d2f-ac2e-17df4bf4959b.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/9/e84d9227-6eef-4f6c-94f4-a26258c5d5a1.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/23/a206c805-83f1-4965-9da7-876b8124fcee.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/11/b9e70df6-9f7a-49aa-a5fc-7ebd8e517ab6.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/10/d234e541-a133-4377-a68f-fbf28d5901b4.png" alt=""></div>
+        <div class="swiper-slide2"><img src="https://mini-io-api.texnomart.uz/catalog/special-category/6/dd88365c-fc33-4062-a6fe-aa2e0d5b4dd8.png" alt=""></div>
+
+    </div>
+
+    <button id="prevBtn" class="slider-btn">‹</button>
+  <button id="nextBtn" class="slider-btn">›</button>
+  </div>
+
+<br> <br>
+
+
+
+<h1>xit savdo</h1><br>
+<br>
+ <div class="slider-container">
+  <button class="prev">◀</button>
+  <div class="swiper3">
+    <div class="swiper-wrapper3">
+
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/1025/102522/204305/5c77a5dc-c1b8-49ff-b83f-6f015c44cd12.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/841/84168/205656/e27a8408-60a4-4ecc-a157-7efa6ba2f4d3.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3577/357708/205090/8eb8d736-9c38-4ff5-aae2-d76a29898ca0.webp" alt=""></div>
+   <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3560/356018/205069/0b2fc9f1-4402-4dd7-8afd-8ffc36cb7459.webp" alt=""></div>
+   <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356602/194108/f28f5282-0054-452d-b3c4-8b30664242ad.jpg" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3559/355913/205151/2711b954-2e24-40c1-8cb7-597cecfbd7b5.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+   <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+                      
+    </div>
+  </div>
+  <button class="next">▶</button>
+</div>
+
+  
+
+    <div class="objekts"></div>
+
+
+  <div class="kop">
+    <div class="imgi">
+        <img src="https://texnomart.uz/_nuxt/img/phone-min.f0f6444.png" alt="">
+    </div>
+    <div class="txtda">
+        <h1>Ilovani yuklang</h1>
+        <p>Haridalrni uydan chqmagan holda mobil ilova orqali amalga oshiring</p>
+        <div class="qr"><img src="https://texnomart.uz/_nuxt/img/app-qr-code-2x.a7afd32.png" alt=""> <p>QR kodni skanerlang va ilovani yuklab oling </p></div>
+    </div>
+  </div>
+
+<br> <br>
+
+<div class="mdt">
+    <h2 class="mt">Smartfonlar va maishiy texnkia muddatli tolovga </h2> <br> <br>
+    <div class="mtf">
+        <img src="https://texnomart.uz/_nuxt/img/diagram.8268449.svg" alt="">
+        <h4>Muddatli tolovga sotib olish </h4>
+        <img src="https://texnomart.uz/_nuxt/img/truck.771714e.svg" alt="">
+        <h4>Bepul yetkazib berish</h4>
+        <img src="https://texnomart.uz/_nuxt/img/warranty.1819e8f.svg" alt="">
+        <h4>Mahsulotlar uchun kafolat</h4>
+        
+    </div>
+</div>
+
+<br> <br> <br> <br>
+ <div class="slider-container">
+  <button class="prev">◀</button>
+  <div class="swiper3">
+    <div class="swiper-wrapper3">
+
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3590/359060/212714/32161168-5f06-4597-808f-ebcdf25cb1dc.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3583/358389/209524/70009aac-fa30-4bec-8aae-cca3a924307d.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/945/94590/205257/2991bd1c-bf45-4d87-888a-64bf71191d95.webp" alt=""></div>
+   <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3585/358541/211893/0a9f7504-b3a2-4ad2-99d3-1f84d7d21edc.png" alt=""></div>
+   <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356602/194108/f28f5282-0054-452d-b3c4-8b30664242ad.jpg" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3559/355913/205151/2711b954-2e24-40c1-8cb7-597cecfbd7b5.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+   <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+     <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+    <div class="swiper-slide3"><img src="https://mini-io-api.texnomart.uz/catalog/product/3566/356663/204400/a9b70d8a-a11c-4e79-9712-13cd3493349f.webp" alt=""></div>
+                      
+    </div>
+  </div>
+  <button class="next">▶</button>
+</div>
+
+
+
+<div id="cartModal" class="cart-modal">
+  <div class="cart-content">
+    <span class="close-btn">&times;</span>
+    <h2>Savatchangiz 🛒</h2>
+    <ul id="cartItems"></ul>
+    <button id="clearCart" class="clear-btn">Savatchani tozalash</button>
+  </div>
+</div>
+
+<br> <br>
+
+<footer class="footer">
+        <div class="footer-top">
+            <div class="footer-contact">
+                <p class="question">Savolingiz bormi? Qo‘ng‘iroq qiling</p>
+                <h2>+998 71 209 99 44</h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Kompaniya</h4>
+                    <ul>
+                        <li><a href="#">Yuridik shaxslar uchun</a></li>
+                        <li><a href="#">Biz haqimizda</a></li>
+                        <li><a href="#">Yangiliklar va bloglar</a></li>
+                        <li><a href="#">IMEI ni tekshirish</a></li>
+                        <li><a href="#">Texnomartda ishlash</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Ma'lumot</h4>
+                    <ul>
+                        <li><a href="#">Bepul yetkazib berish</a></li>
+                        <li><a href="#">Xizmat ko‘rsatish markazlari</a></li>
+                        <li><a href="#">Shaxsiy kabinet</a></li>
+                        <li><a href="#">Aloqa raqamlari</a></li>
+                        <li><a href="#">Ommaviy taklif shartnomasi</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Haridorga yordam</h4>
+                    <ul>
+                        <li><a href="#">Mahsulotni qaytarish</a></li>
+                        <li><a href="#">Mahsulotlar uchun kafolat</a></li>
+                        <li><a href="#">Do‘konlar manzillari</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Ilovani yuklab olish</h4>
+                    <div class="app-download">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://texnomart.uz" alt="QR kod">
+                        <div class="app-icons">
+                            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+                            <!-- <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Download_on_the_App_Store_Badge.svg" alt="App Store"></a> -->
+                            <!-- <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Huawei_AppGallery_badge_EN.svg" alt="AppGallery"></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+            <p>2016–2025 © texnomart.uz. Barcha huquqlar himoyalangan. Tovarlarning ko‘rsatilgan qiymati va ularni sotib olish shartlari joriy sanaga amal qiladi</p>
+            <div class="pay-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Uzcard_logo.svg" alt="">
+                <img src="https://humocard.uz/upload/medialibrary/6db/humo.png" alt="">
+                <img src="https://cdn.payme.uz/logo/payme_logo_green.svg" alt="">
+                <img src="https://cdn.click.uz/logos/click-logo-blue.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/app.js"></script>
+</body>
+</html>
+
+
