@@ -8,6 +8,7 @@ body {
   height: 100vh;
 }
 
+
 .swiper {
   width: 1300px;
   height: 400px;
@@ -783,28 +784,99 @@ hr {
     }
 }
 
+.objekts {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
-/* 620px va kichikroq – 2 tadan qator */
-@media (max-width: 620px) {
-    .objekts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
+.box {
+    flex: 1 1 200px; /* Default: avtomatik o'lcham */
+    max-width: 250px;
+    height: auto;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
 
-    .objekts .box {
-        width: calc(50% - 10px); /* 2 tadan qator */
-        max-width: none;
-        margin: 0;
+/* 480px gacha 2 ta kartani yonma-yon */
+@media (max-width: 480px) {
+    .box {
+        flex: 1 1 45%; /* 2 ta kartani yonma-yon */
+        max-width: 45%;
     }
 }
 
-/* 320px va kichikroq – 1 tadan qator */
-@media (max-width: 320px) {
-    .objekts .box {
-        width: 100%; /* 1 tadan qator */
-        max-width: none;
+/* 350px gacha ham 2 ta kartani yonma-yon (yoki 100% bo‘lishi mumkin) */
+@media (max-width: 350px) {
+    .box {
+        flex: 1 1 45%; /* Shu holatda ham 2 ta kartani yonma-yon */
+        max-width: 45%;
     }
 }
 
+
+/* container uchun */
+.objekts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* karta uchun */
+.box {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* rasmlar uchun agar kerak bo'lsa */
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* responsive media query */
+@media (max-width: 700px) {
+  .objekts {
+    grid-template-columns: 1fr; /* kichik ekranlarda bitta ustun */
+  }
+}
+@media (max-width: 768px) {
+  .objekts {
+    grid-template-columns: repeat(2, 1fr); /* 2 card qator */
+  }
+  .box {
+    padding: 10px;
+  }
+}
+
+/* Juda kichik ekranlar (iPhone SE va kichik) */
+@media (max-width: 480px) {
+  .objekts {
+    grid-template-columns: repeat(2, 1fr); /* har doim 2 card */
+    gap: 10px;
+    padding: 10px;
+  }
+  .box {
+    padding: 10px;
+  }
+}
+
+/* Ultra kichik ekranlar */
+@media (max-width: 350px) {
+  .objekts {
+    grid-template-columns: repeat(2, 1fr); /* 2 card qator */
+    gap: 5px;
+  }
+  .box {
+    padding: 8px;
+  }
+}
