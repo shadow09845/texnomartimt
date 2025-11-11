@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Telegram Bot Form</title>
+  <style>
+    .telegram-form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 50px auto;
+      gap: 10px;
+    }
+    textarea, input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="telegramForm" class="telegram-form">
+    <textarea id="message" placeholder="Xabar kiriting..." required></textarea>
+    <input type="tel" id="phone" placeholder="+998" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="/kirish.js"></script>
+
+</body>
+</html>

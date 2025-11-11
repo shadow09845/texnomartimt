@@ -163,7 +163,6 @@ body {
 
     .objekts {
    display: flex;
-   gap: px;
    cursor: pointer;
 }
 
@@ -267,6 +266,7 @@ body {
     margin-bottom: 10px;
     color: #f9c700;
 }
+
 
 .footer-links ul {
     list-style: none;
@@ -375,18 +375,18 @@ hr {
   width: 1600px;
 }  */
 
-/* Dastlab yashirish */
+
 .search-container,
 .mobile-navbar {
-    display: none; /* defaultda yashirin */
+    display: none; 
 }
 
-/* Mobil ekranlar uchun */
+
 @media (max-width: 768px) {
     .search-container {
-        display: block; /* inputni ko‘rsatish */
+        display: block; 
         padding: 10px;
-        background-color: #fff; /* sahifa foniga mos */
+        background-color: #fff; 
         text-align: center;
     }
 
@@ -398,10 +398,10 @@ hr {
     }
 
     .mobile-navbar {
-        display: flex; /* flex ko‘rinishi */
+        display: flex; 
         justify-content: space-around;
         align-items: center;
-        background-color: #000; /* qora fon */
+        background-color: #000; 
         color: white;
         position: fixed;
         bottom: 0;
@@ -416,41 +416,40 @@ hr {
         color: white;
         text-decoration: none;
         display: flex;
-        flex-direction: column; /* ikonalar va matn pastma-past */
+        flex-direction: column; 
         align-items: center;
         font-size: 12px;
     }
 
     .mobile-navbar a span {
-        font-size: 20px; /* icon hajmi */
+        font-size: 20px; 
         margin-bottom: 2px;
     }
 
     body {
-        padding-bottom: 60px; /* navbar joyi uchun bo‘shliq */
+        padding-bottom: 60px; 
     }
 }
-/* Input yuqori uchun */
 .search-container {
     padding: 10px;
-    background-color: #fff; /* sahifa foniga moslash mumkin */
+    background-color: #fff; 
     text-align: center;
 }
 
 .search-container .search {
-    width: 90%;  /* kengroq */
+    width: 90%;  
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
 
-/* MOBIL NAVBAR */
+
 @media (max-width: 768px) {
     .mobile-navbar {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #000; /* qora fon */
+        background-color: #000; 
         color: white;
         position: fixed;
         bottom: 0;
@@ -465,38 +464,40 @@ hr {
         color: white;
         text-decoration: none;
         display: flex;
-        flex-direction: column; /* ikonalar va matn pastma-past */
+        flex-direction: column; 
         align-items: center;
         font-size: 12px;
     }
 
     .mobile-navbar a span {
-        font-size: 20px; /* icon hajmi */
+        font-size: 20px; 
         margin-bottom: 2px;
     }
 
+    
+
     body {
-        padding-bottom: 60px; /* navbar joyi uchun bo‘shliq */
+        padding-bottom: 60px; 
     }
 }
-/* MOBIL UCHUN */
+
 @media (max-width: 768px) {
   .navbar {
     display: flex;
-    flex-direction: row; /* yonma-yon */
-    justify-content: space-around; /* bo‘sh joylar teng tarqaladi */
+    flex-direction: row; 
+    justify-content: space-around; 
     align-items: center;
-    background-color: #000; /* qora fon */
+    background-color: #000; 
     padding: 10px;
     position: fixed;
-    bottom: 0; /* pastga */
+    bottom: 0; 
     left: 0;
     width: 100%;
     z-index: 999;
   }
 
   .navbar h1 {
-    display: none; /* pastdagi navbar’da logo ko‘rinmasin */
+    display: none; 
   }
 
   .navbar button {
@@ -523,11 +524,11 @@ hr {
   }
 
   body {
-    padding-bottom: 60px; /* navbar joyi uchun bo‘shliq */
+    padding-bottom: 60px; 
   }
 }
 
-/* Asosiy navbar flex bo'lsin */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -536,22 +537,22 @@ hr {
   gap: 10px;
 }
 
-/* ===== MOBIL UCHUN ===== */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    background-color: #000; /* qora fon */
+    background-color: #000; 
     color: white;
     padding: 15px;
     position: fixed;
-    bottom: 0; /* pastga joylashadi */
+    bottom: 0; 
     left: 0;
     width: 100%;
     z-index: 999;
   }
 
   .navbar h1 {
-    display: none; /* pastdagi navbar’da logo ko‘rinmasin */
+    display: none; 
   }
 
   .navbar button {
@@ -578,7 +579,7 @@ hr {
     margin: 5px;
   }
 
-  /* Yuqoridagi logo (texnomart*) alohida joyda bo‘lishi uchun */
+ 
   .orab h1 {
     text-align: center;
     color: #000;
@@ -587,7 +588,7 @@ hr {
   }
 
   body {
-    padding-bottom: 220px; /* pastdagi navbar joyi uchun bo‘shliq */
+    padding-bottom: 220px; 
   }
 }
 
@@ -663,20 +664,18 @@ hr {
 }
 
 
-@media (max-width: 480px) {
-    .box {
-        width: 100%;
-        max-width: 160px;
-        padding: 10px;
-        margin: 0 auto;
-    }
-    .objekts {
-        padding: 10px;
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 340px) {
+  .objekts {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .box {
+    padding: 10px;
+  }
 }
+
 
 .mdt {
     padding: 30px 15px;
@@ -733,9 +732,11 @@ hr {
     }
 
     .mtf {
-        flex-wrap: wrap; /* kartalarni qatorda joylashishiga ruxsat beramiz */
+        flex-wrap: wrap; 
         justify-content: center;
     }
+
+    
 
     .mtf img {
         width: 35px;
@@ -746,11 +747,11 @@ hr {
         font-size: 12px;
     }
 
-    /* 200-300px ekranlarda 2 tadan */
+  
     @media (max-width: 300px) {
         .mtf > div {
-            width: 45%; /* 2 kartaga bo‘lish */
-            margin: 2.5%; /* oraliq berish */
+            width: 45%; 
+            margin: 2.5%; 
         }
     }
 }
@@ -764,22 +765,22 @@ hr {
     }
 
     .objekts .box {
-        width: calc(50% - 10px); /* 2 tadan qator uchun */
-        margin: 0; /* kerak bo'lsa */
+        width: calc(50% - 10px); 
+        margin: 0; 
     }
 }
-/* iPhone 15 Pro (~430px) va kichik ekranlar uchun */
+
 @media (max-width: 480px) {
     .objekts {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px; /* kartalar orasidagi bo‘shliq */
+        gap: 10px; 
     }
 
     .objekts .box {
-        width: calc(50% - 10px); /* 2 tadan qator uchun */
-        max-width: none; /* oldingi max-width cheklovini olib tashlaymiz */
+        width: calc(50% - 10px); 
+        max-width: none;
         margin: 0;
     }
 }
@@ -789,12 +790,12 @@ hr {
     display: flex;
     justify-content: space-around;
     padding: 50px;
-    gap: 20px;
+    gap: 100px;
     flex-wrap: wrap;
 }
 
 .box {
-    flex: 1 1 200px; /* Default: avtomatik o'lcham */
+    flex: 1 1 200px; 
     max-width: 250px;
     height: auto;
     padding: 30px;
@@ -802,24 +803,22 @@ hr {
     text-align: center;
 }
 
-/* 480px gacha 2 ta kartani yonma-yon */
-@media (max-width: 480px) {
+
+ @media (max-width: 480px) {
     .box {
-        flex: 1 1 45%; /* 2 ta kartani yonma-yon */
+        flex: 1 1 45%; 
         max-width: 45%;
     }
 }
 
-/* 350px gacha ham 2 ta kartani yonma-yon (yoki 100% bo‘lishi mumkin) */
+
 @media (max-width: 350px) {
     .box {
-        flex: 1 1 45%; /* Shu holatda ham 2 ta kartani yonma-yon */
+        flex: 1 1 45%; 
         max-width: 45%;
     }
-}
+} 
 
-
-/* container uchun */
 .objekts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -827,7 +826,6 @@ hr {
   padding: 20px;
 }
 
-/* karta uchun */
 .box {
   background: #f5f5f5;
   padding: 15px;
@@ -836,7 +834,7 @@ hr {
   text-align: center;
 }
 
-/* rasmlar uchun agar kerak bo'lsa */
+
 .box img {
   width: 100%;
   height: auto;
@@ -846,22 +844,22 @@ hr {
 /* responsive media query */
 @media (max-width: 700px) {
   .objekts {
-    grid-template-columns: 1fr; /* kichik ekranlarda bitta ustun */
+    grid-template-columns: 1fr; 
   }
 }
 @media (max-width: 768px) {
   .objekts {
-    grid-template-columns: repeat(2, 1fr); /* 2 card qator */
+    grid-template-columns: repeat(2, 1fr);
   }
   .box {
     padding: 10px;
   }
 }
 
-/* Juda kichik ekranlar (iPhone SE va kichik) */
+
 @media (max-width: 480px) {
   .objekts {
-    grid-template-columns: repeat(2, 1fr); /* har doim 2 card */
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
   }
@@ -870,13 +868,110 @@ hr {
   }
 }
 
-/* Ultra kichik ekranlar */
 @media (max-width: 350px) {
   .objekts {
-    grid-template-columns: repeat(2, 1fr); /* 2 card qator */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
   }
   .box {
     padding: 8px;
   }
 }
+
+.box {
+  background: linear-gradient(to bottom right, #ffffff, #f6f6f6);
+  transition: all 0.3s ease;
+}
+.box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+button, .clear-btn {
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* button:hover, .clear-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ffd633, #ffb833);
+} */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #fff9e6;
+}
+ .product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+} 
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  list-style: none;
+}
+
+@media (max-width: 450px) {
+  .objekts {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    padding: 10px;
+  }
+  .box {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .objekts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .box {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    width: 100%;
+  }
+}.search {
+  width: 400px;
+}
+
+@media (max-width: 768px) {
+  .search {
+    width: 100% !important;
+  }
+}
+
